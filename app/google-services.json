@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "535904810295",
+    "project_id": "appcollege-dc58c",
+    "storage_bucket": "appcollege-dc58c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535904810295:android:7abed395239221bb1896b2",
+        "android_client_info": {
+          "package_name": "com.example.appcollege"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "535904810295-ics3ugs1m4rivsq6ngb0l7j736vc9469.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1M0sycpKTaDF8U73Ks60oJjKtrUpKbJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "535904810295-ics3ugs1m4rivsq6ngb0l7j736vc9469.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColour"
+            android:textSize="20sp"
+            android:text="Course ID"
+            android:id="@+id/item_courseID"
+            android:textStyle="bold"
+            android:padding="10dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColour"
+            android:textSize="18sp"
+            android:text="Course Name"
+            android:id="@+id/item_courseName"
+            android:textStyle="bold|italic"
+            android:padding="10dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColour"
+            android:textSize="16sp"
+            android:text="Subject 2"
+            android:id="@+id/item_subjectName2"
+            android:padding="10dp"
+            android:textStyle="italic">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColour"
+            android:textSize="16sp"
+            android:text="Subject 3"
+            android:id="@+id/item_subjectName3"
+            android:padding="10dp"
+            android:textStyle="italic">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColour"
+            android:textSize="16sp"
+            android:text="Subject 4"
+            android:id="@+id/item_subjectName4"
+            android:padding="10dp"
+            android:textStyle="italic">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColour"
+            android:textSize="16sp"
+            android:text="Subject 5"
+            android:id="@+id/item_subjectName5"
+            android:padding="10dp"
+            android:textStyle="italic">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColour"
+            android:textSize="16sp"
+            android:text="Fee Amount"
+            android:id="@+id/item_feeAmount"
+            android:padding="10dp"
+            android:textStyle="italic">
+
+        </TextView>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Course"
+            android:id="@+id/subject_EditButton"
+            android:layout_marginTop="16dp"
+            android:textAllCaps="false"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton">
+
+        </com.google.android.material.button.MaterialButton>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.appcollege">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCollege">
+        <activity android:name=".User.AboutUs"></activity>
+        <activity android:name=".Admin.CommentDelete" />
+        <activity android:name=".User.NotesDetails4" />
+        <activity android:name=".User.NotesDetails3" />
+        <activity android:name=".User.NotesDetails2" />
+        <activity android:name=".User.NotesAdd4" />
+        <activity android:name=".User.NotesAdd3" />
+        <activity android:name=".User.NotesAdd2" />
+        <activity android:name=".User.NotesDetails" />
+        <activity android:name=".User.NotesAdd" />
+        <activity android:name=".User.NotesManage" />
+        <activity android:name=".Admin.LecturerUpdate" />
+        <activity android:name=".Admin.LecturerManage" />
+        <activity android:name=".Admin.NewsAdd" />
+        <activity android:name=".Admin.NewsManage" />
+        <activity android:name=".Admin.StudentUpdate" />
+        <activity android:name=".UserResetPassword" />
+        <activity android:name=".UserRegister" />
+        <activity android:name=".User.UserProfile" />
+        <activity android:name=".News.NewsDetails" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Admin.AdminHome" />
+        <activity android:name=".Admin.SubjectEdit" />
+        <activity android:name=".Admin.SubjectAdd" />
+        <activity android:name=".Admin.SubjectManage" />
+        <activity android:name=".Admin.AppDetails" />
+        <activity android:name=".News.NewsRead" />
+        <activity android:name=".User.UserEdit" />
+        <activity android:name=".Admin.UserManage" />
+        <activity android:name=".UserLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+</manifest>

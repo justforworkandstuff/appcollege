@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.UserProfile"
+    android:id="@+id/main_drawer_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/main_toolbar"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/user_profile_avatar"
+                    android:src="@drawable/useravatar"
+                    android:layout_marginTop="20dp">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Category"
+                    android:id="@+id/user_profile_userCategory"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:maxWidth="20dip"
+                    android:visibility="gone">
+
+                </com.google.android.material.textview.MaterialTextView>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:id="@+id/user_profile_name"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:padding="4dp"
+                    android:textStyle="bold">
+
+                </com.google.android.material.textview.MaterialTextView>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="User ID"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:id="@+id/user_profile_userID">
+
+                </com.google.android.material.textview.MaterialTextView>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Programme"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold"
+                    android:id="@+id/user_profile_programme">
+
+                </com.google.android.material.textview.MaterialTextView>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Course Name"
+                    android:id="@+id/user_profile_courseName"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:padding="2dp">
+
+                </com.google.android.material.textview.MaterialTextView>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Course ID"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:id="@+id/user_profile_courseID"
+                    android:padding="2dp">
+
+                </com.google.android.material.textview.MaterialTextView>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="User Details"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold">
+
+                </com.google.android.material.textview.MaterialTextView>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:id="@+id/user_profile_userEmail"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:padding="2dp">
+
+                </com.google.android.material.textview.MaterialTextView>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Number"
+                    android:id="@+id/user_profile_userNumber"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:padding="2dp">
+
+                </com.google.android.material.textview.MaterialTextView>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:id="@+id/user_profile_userAddress"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:maxWidth="20dip">
+
+                </com.google.android.material.textview.MaterialTextView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Details"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/user_profile_editButton"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton">
+
+                </com.google.android.material.button.MaterialButton>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fee Details"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:layout_marginTop="8dp"
+                        android:textStyle="bold"
+                        android:id="@+id/user_profile_FeeDetails">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fee Status"
+                        android:id="@+id/user_profile_feeStatus"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:padding="3dp">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fee Amount"
+                        android:id="@+id/user_profile_feeAmount"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="50dp">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Course Details"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:layout_marginTop="8dp"
+                            android:textStyle="bold"
+                            android:id="@+id/user_profile_courseDetails"
+                            android:visibility="gone">
+
+                        </com.google.android.material.textview.MaterialTextView>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Subject 1"
+                            android:id="@+id/user_profile_sub1"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:visibility="gone">
+
+                        </com.google.android.material.textview.MaterialTextView>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Subject 2"
+                            android:id="@+id/user_profile_sub2"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:visibility="gone">
+
+                        </com.google.android.material.textview.MaterialTextView>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Subject 3"
+                            android:id="@+id/user_profile_sub3"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:visibility="gone">
+
+                        </com.google.android.material.textview.MaterialTextView>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Subject 4"
+                            android:id="@+id/user_profile_sub4"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="50dp"
+                            android:visibility="gone">
+
+                        </com.google.android.material.textview.MaterialTextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white">
+
+        <include
+            layout="@layout/main_navigation_drawer"/>
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

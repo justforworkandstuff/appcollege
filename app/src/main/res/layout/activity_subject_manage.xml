@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.SubjectManage">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Courses and Subjects"
+                android:layout_gravity="left"
+                android:textSize="24dp"
+                android:textColor="@color/textColour"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp">
+
+            </TextView>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:gravity="center"
+                android:id="@+id/subject_Category"
+                android:layout_marginVertical="16dp"
+                android:background="@android:drawable/btn_dropdown">
+            </Spinner>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/subject_Recycler">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/subject_AddButton"
+    style="@style/Widget.Design.FloatingActionButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:layout_margin="24dp"
+    android:src="@drawable/ic_add"
+    app:elevation="3dp"
+    app:fabSize="normal">
+
+</com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>
